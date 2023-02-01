@@ -1,0 +1,23 @@
+project:
+    project_name: passive data project
+    description: Integrating code for passive data pipeline that has been used ART-pilot study
+    version: 0.0
+
+input_data:
+    data_location: local
+    local_directory:  /Users/heetsankesara/work/ART/data_cleaning/android_data
+    data_format: csv
+
+configurations:
+    df_type: 'pandas'
+
+features:
+    - location: /Users/heetsankesara/work/RADAR/radar-pipeline/passivedatapipeline
+      feature_groups:
+          - PassiveDataFeatures
+
+output_data:
+    output_location: local
+    local_directory: passive_output
+    data_format: csv
+    compress: false
