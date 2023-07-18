@@ -1,6 +1,7 @@
 import pandas as pd
 from radarpipeline.datalib import RadarData
 from radarpipeline.features import Feature, FeatureGroup
+import pyspark.pandas as ps
 
 
 class PassiveDataFeatures(FeatureGroup):
